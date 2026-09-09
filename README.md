@@ -16,11 +16,11 @@ In this document, you will find:
 ## Running the Project
 
 1. Open the project in VS Code.
-2. Click on the "Run and Debug" button on the sidebar (it looks like a play button).
-3. Select "Open with Live Server" from the drop-down menu.
-4. Click the green play button. This will start a local server and open your project in a web browser.
-5. If this fails, you could try to [start from the terminal instead](#starting-from-the-terminal)
-   ![play-screenshot](screenshots/play-github.png)
+2. Open the **Terminal** menu and choose **Run Task**, then select **Start Live Server**.
+3. Open the **Ports** panel and open port `5500` in the browser or editor preview.
+4. If this fails, you can [start from the terminal instead](#starting-from-the-terminal).
+   ![play-screenshot](screenshots/terminal-run-task.png)
+   ![play-screenshot](screenshots/task-start-live-server.png)
 
 ## Viewing Your Project
 
@@ -35,8 +35,7 @@ In this document, you will find:
 
 ## Editing Your Project
 
-- Choose the "File Explorer" tab to see your files,
-  and then look for your webpage code under the "public" folder.
+- Choose the "File Explorer" tab to see your files in the project root.
   ![img](./screenshots/github-file-editor.png)
 
 - **index.html**: This is your HTML file. Edit it to change the structure of your web page.
@@ -46,9 +45,11 @@ In this document, you will find:
 
 You don't need to worry about the following files and folders. They are used to set up and run your project environment:
 
-- `package.json` and `package-lock.json`: Configuration files for Node.js.
+- `package.json` and `package-lock.json`: Configuration files for Node.js. They are hidden from the Explorer.
 - `node_modules`: A folder containing all the packages and dependencies for the project.
-- `.vscode`: Contains configuration files for Visual Studio Code.
+- `.vscode`: Contains configuration files for Visual Studio Code. It is hidden from the Explorer.
+
+These files are hidden in the editor to keep the student workspace focused. They are still part of the repository and are not a security boundary.
 
 ## Adding Extensions
 
@@ -90,7 +91,7 @@ You can rename images in GitHub by selecting the file and pressing "Enter" or ch
 Before you upload images to your project, you should make sure you have the right to
 use them, either because you created them yourself, or because you found an image in
 the public domain or with a creative commons license that allows re-use. Wikipedia
-or the Wikimedia commons can be good sources of reusable images. 
+or the Wikimedia commons can be good sources of reusable images.
 
 ### Adding Images to GitHub CodeSpaces
 
@@ -100,10 +101,9 @@ menu and selecting upload.
 
 If you put files in the wrong place, you can drag-and-drop to move them.
 
-Images you want to include in your project should be in the "public" folder. 
+Images you want to include in your project should be in the project root.
 I recommend organizing them inside of a separate "images" folder for easy
 file management.
-
 
 ## Starting from the Terminal
 
